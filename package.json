@@ -1,0 +1,20 @@
+{
+  "name": "node-threaded-addon-emitter",
+  "version": "0.1.0",
+  "description": "Node.js example that creates a generic emitter from a secondary addon thread",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "author": "",
+  "license": "ISC",
+  "gypfile": true,
+  "devDependencies": {
+    "nan": "^2.4.0",
+    "node-gyp": "^3.4.0"
+  },
+  "dependencies": {
+    "bindings": "^1.2.1"
+  }
+}
