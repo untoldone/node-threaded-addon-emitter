@@ -25,6 +25,9 @@ Local<Array> hello_parser(void *generic) {
   hello_args *args = static_cast<hello_args *>(generic);
   Local<Array> argv = New<Array>();
   argv->Set(0, New<Number>(args->first));
+
+  delete args;
+
   return argv;
 }
 
